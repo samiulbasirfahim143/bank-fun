@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <!-- link of vanilla css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link of tailwind cdn file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header><h3 class="text-3xl text-center mt-16">WANT TO DEPOSITE</h3></header>
+    
+    <main class="w-3/4 mx-auto mt-8">
+        <div class="grid grid-cols-3">
+            <div class="flex justify-center">
+            <div class="bg-cyan-400 py-5 px-16  rounded-3xl">
+                <p class="text-3xl font-semibol uppercase text-red-600">
+                    DEPOSITE
+                </p>
+                <p class="text-5xl font-bold my-3">
+                    $ <span id="deposite-cash">00</span>
+                </p>
+            </div>
+            </div>
+           <div class="flex justify-center">
+            <div class="bg-lime-400 py-5 px-16 rounded-3xl">
+                <p class="text-3xl font-semibol uppercase text-red-600">
+                    withdraw
+                </p>
+                <p class="text-5xl font-bold my-3">
+                    $ <span id="withdraw-cash">00</span>
+                </p>
+            </div>
+           </div>
+           <div class="flex justify-center">
+            <div class="bg-red-400 py-5 px-16 rounded-3xl">
+                <p class="text-3xl font-semibol uppercase text-red-600">
+                    total cash
+                </p>
+                <p id="total-cash" class="text-5xl font-bold my-3">
+                    $<span id="total-amount">1255</span>
+                </p>
+            </div>
+           </div>
+        </div>
+        <div class="grid gap-8 mt-5 rounded grid-cols-2">
+            <div class="bg-lime-200 rounded-3xl px-5 py-16 flex flex-col justify-center">
+                <input type="text" class="border-y-4 px-5 py-2 font-bold border-y-purple-900 border" name="" id="deposite-field" placeholder="money amount">
+                <button class="px-5 py-2 font-bold bg-cyan-400 w-2/4 mx-auto mt-5" id="deposite-button">DEPOSITE</button>
+            </div>
+            <div class="bg-lime-200 rounded-3xl px-5 py-16 flex flex-col justify-center">
+                <input type="text" class="border-y-4 px-5 py-2 font-bold border-y-purple-900 border" name="" id="withdraw-field" placeholder="money amount">
+                <button class="px-5 py-2 font-bold bg-cyan-400 w-2/4 mx-auto mt-5" id="withdraw-button">WITHDRAW</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- link of javascript file  -->
+    <script src="./JavaScript/./script_second.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
